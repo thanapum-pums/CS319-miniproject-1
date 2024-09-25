@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    <style>
+        /* General Style */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+
+        /* Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px;
+            background-color: #fff;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Center horizontally */
+        }
+
+        /* Header Image */
+        .header-image {
+            width: 80%; /* ลดขนาดรูปให้เล็กลง */
+            height: auto;
+            max-width: 100%; /* ป้องกันไม่ให้รูปภาพใหญ่เกินขนาดหน้าจอ */
+            border-radius: 10px 10px 0 0;
+            margin-bottom: 20px; /* เพิ่มระยะห่างจากฟอร์ม */
+        }
+
+        /* Form Style */
+        .form-wrapper {
+            width: 100%;
+            max-width: 600px; /* จำกัดความกว้างของฟอร์ม */
+            padding: 30px;
+            background-color: #fff;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        .form-title {
+            font-size: 32px;
+            color: #333;
+            margin-bottom: 20px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .form-input {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .form-input:focus {
+            border-color: #007bff;
+            outline: none;
+        }
+
+        .form-button {
+            width: 100%;
+            padding: 15px;
+            background-color: #007bff;
+            color: #fff;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .form-button:hover {
+            background-color: #0056b3;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            color: #888;
+        }
+
+        /* Responsive for smaller screens */
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+
+            .form-title {
+                font-size: 24px;
+            }
+
+            .form-button {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Registration Form -->
+     
+    <div class="container">
+        
+        <!-- Header Image -->
+        <img src="https://contents.bu.ac.th/contents/images/contact-page/036a1c49-165f-46a0-a519-06a2e0a1102f.jpg" alt="Bangkok University" class="header-image">
+
+        <!-- Form Section -->
+        <div class="form-wrapper">
+            <h1 class="form-title">Register for an Account</h1>
+
+            <form action="submit_form.php" method="POST">
+                <label for="first_name">First Name</label>
+                <input type="text" id="first_name" name="first_name" class="form-input" placeholder="First Name" required>
+
+                <label for="last_name">Last Name</label>
+                <input type="text" id="last_name" name="last_name" class="form-input" placeholder="Last Name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" class="form-input" placeholder="Email" required>
+
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" class="form-input" placeholder="Password" required>
+
+                <label for="confirm_password">Confirm Password</label>
+                <input type="password" id="confirm_password" name="confirm_password" class="form-input" placeholder="Confirm Password" required>
+
+                <button type="submit" class="form-button">Register Now</button>
+            </form>
+
+            <div class="footer">
+                Already have an account? <a href="login.html">Login here</a>
+                <br>Not register <a href="login.html">Back Homepage Here</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

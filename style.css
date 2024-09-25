@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Mitr", sans-serif;
+  font-weight: 200;
+}
+
+nav {
+  background: black;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  height: 60px;
+}
+
+.img-logo {
+  background-color: #fff;
+}
+
+/* .nav-pills .nav-link.active {
+  color: #fff;
+  background-color: #999999;
+} */
+
+.nav-pills .nav-link {
+  color: #fff;
+}
+
+.hero {
+  background-image: url('https://contents.bu.ac.th/contents/images/banners/80002e44-6e8d-455a-9e5f-47bcf108db61.webp');
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  color: rgb(255, 93, 93);
+  text-shadow: 2px 2px 4px rgba(255, 251, 0, 0.5);
+}
+
+/* .section {
+  padding: 80px 20px 60px;
+  scroll-margin-top: 60px;
+} */
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+@media (max-width: 767.98px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .nav-pills {
+    margin-top: 15px;
+    flex-wrap: wrap;
+  }
+  
+  .nav-pills .nav-link {
+    margin: 5px;
+  }
+  
+  .img-logo {
+    max-width: 120px;
+  }
+  
+  body {
+    font-size: 14px;
+  }
+  
+  .section {
+    padding: 40px 15px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (max-width: 1399.98px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+  }
+  
+  .nav-pills .nav-link {
+    font-size: 0.8rem;
+    padding: 6px 10px;
+  }
+}
